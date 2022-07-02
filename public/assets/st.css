@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.checkbox:checked + p {
+    text-decoration: line-through;
+    color: gray;
+}
+.dj::before{
+    transition: 300ms;
+  height: 4px;
+  content: " ";
+  position: absolute;
+  background-color: white;
+  width: 0%;
+  top: 70px;
+}
+
+.dj:hover::before{
+    width: 120px;
+}
